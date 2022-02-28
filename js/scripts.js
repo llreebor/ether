@@ -32,7 +32,13 @@ btn.addEventListener('click', () => {
 // Copy
 function copyText() {
     const input = document.querySelector('.copy__input')
-    input.select()
-    document.execCommand('copy')
+    navigator.clipboard
+        .writeText(input.value)
+        .then(() => {
+            // Получилось!
+        })
+        .catch((err) => {
+            console.log('Something went wrong', err)
+        })
 }
 

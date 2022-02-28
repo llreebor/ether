@@ -440,6 +440,10 @@ body.locked {
   outline: none;
 }
 
+.form__input:disabled {
+  outline: 1px solid gray;
+}
+
 .form__input::-webkit-input-placeholder {
   font-style: normal;
   font-weight: normal;
@@ -500,6 +504,10 @@ body.locked {
   line-height: 140%;
   color: #000000;
   font-family: sans-serif;
+}
+
+.form__textarea:disabled {
+  outline: 1px solid gray;
 }
 
 .form__textarea::-webkit-input-placeholder {
